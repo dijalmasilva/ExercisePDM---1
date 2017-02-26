@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#88f9f9f9"
+            android:textStyle="bold"
+            android:id="@+id/btTabChat"
+            android:text="@string/bt_chatTab"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btTabMission"
+            android:textStyle="bold"
+            android:background="#88000000"
+            android:text="@string/bt_missionTab"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tabChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88f9f9f9"
+        android:visibility="visible">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friends">
+
+        </ListView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tabMission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88f9f9f9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="30dp"
+                    android:drawableTop="@drawable/ic_work"
+                    android:background="#00000000"
+                    android:text="@string/bt_newMission"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:id="@+id/btNewMission"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_work_check"
+                    android:background="#00000000"
+                    android:paddingTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="@string/bt_otherMissions"
+                    android:textAlignment="center"
+                    android:id="@+id/btLastMissions"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="30dp"
+                    android:drawableTop="@drawable/ic_settings"
+                    android:background="#00000000"
+                    android:text="@string/bt_settings"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:id="@+id/btSettings"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:paddingTop="30dp"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/ic_view_quilt"
+                    android:text="@string/bt_gallery"
+                    android:textAlignment="center"
+                    android:id="@+id/btGallery"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

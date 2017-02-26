@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AirSoft Cariri</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_senha">Senha</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="bt_chatTab">Bate-Papo</string>
+    <string name="bt_missionTab">Missões</string>
+    <string name="bt_newMission">Nova Missão</string>
+    <string name="bt_otherMissions">Missões Anteriores</string>
+    <string name="bt_gallery">Galeria de Fotos</string>
+    <string name="bt_settings">Configurações</string>
+    <string name="bt_send">Enviar</string>
+    <string name="edText_message_hint">Escreva alguma coisa</string>
+    <string name="host">192.168.0.109</string>
+</resources>
